@@ -1,0 +1,69 @@
+* {
+  wht: #1e2d1c;
+  blk: #f2f2f2;
+  gry: #9b9b9b;
+  
+  red: #8e7f23; 
+  grn: #7a9323;
+  blu: #3d6630;
+
+  background-color: @blk;
+  font: "Noto Sans CJK JP DemiLight 13";
+  color: @blk;
+}
+
+#window {
+  width: 180px;
+  location: south west;
+  border: 0px;
+  padding: 0px 0px 48px 56px;
+}
+
+#inputbar {
+  padding: 0 0 0 15px;
+  spacing: 10px;
+}
+
+
+/*:::: list ::::*/
+
+#listview {
+  lines: 8;
+}
+
+#element {
+  color: @wht;
+  margin:  4px 0px 4px 0px;
+  padding: 0px 0px 2px 0px;
+}
+
+#element selected normal {
+  background-color: #b4eeb4;
+}
+
+#element normal active {
+  background-color: @red;
+}
+
+#element normal urgent {
+  background-color: Orange;
+}
+
+#element alternate normal {
+}
+
+#element alternate active {
+  text-color: @focus-col;
+}
+
+#element alternate urgent {
+  background-color: OrangeRed;
+}
+
+#element selected active {
+  background-color:  #a6a6a6;
+}
+
+#element selected urgent {
+  background-color:  DarkOrange;
+}
