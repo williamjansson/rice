@@ -1,0 +1,61 @@
+#include ".clr"
+
+!:::: xorg ::::
+
+#Xft.dpi: 102
+#Xft.autohint: 0
+#Xft.antialias: 1
+#Xft.hinting: true
+#Xft.hintstyle: hintfull
+#Xft.rgba: rgb
+#Xft.lcdfilter: lcddefault
+
+
+!:::: emacs ::::
+
+emacs.font: Roboto Mono Book 10
+emacs.toolBar: 0
+emacs.menuBar: 0
+emacs.geometry: 96x33
+emacs.verticalScrollBars: off
+emacs.scrollBar: off
+emacs*background: blk
+emacs*foreground: wht
+emacs*cursorBlink: off
+
+
+!:::: sxiv ::::
+
+Sxiv.background: antiquewhite
+Sxiv.font: Roboto Mono-9
+
+
+!:::: colors ::::
+
+!blk
+*color0:  blk
+
+!gry
+*color8:  gry
+*color2:  gry
+
+!red
+*color1:  red
+*color5:  red
+*color9:  red
+*color13: red
+
+!grn
+*color3:  grn
+*color10: grn
+*color11: grn
+
+!blu
+*color4:  blu
+*color6:  blu
+*color12: blu
+*color14: blu
+
+!wht
+*color7:  wht
+*color15: wht
