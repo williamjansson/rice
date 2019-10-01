@@ -3,25 +3,15 @@
 !:::: xorg ::::
 
 #Xft.dpi: 102
+#Xft.dpi: 192
 #Xft.autohint: 0
 #Xft.antialias: 1
 #Xft.hinting: true
 #Xft.hintstyle: hintfull
 #Xft.rgba: rgb
 #Xft.lcdfilter: lcddefault
-
-
-!:::: emacs ::::
-
-emacs.font: Roboto Mono Book 10
-emacs.toolBar: 0
-emacs.menuBar: 0
-emacs.geometry: 96x33
-emacs.verticalScrollBars: off
-emacs.scrollBar: off
-emacs*background: blk
-emacs*foreground: wht
-emacs*cursorBlink: off
+#Xcursor.theme: Adwaita
+#Xcursor.size: 48
 
 
 !:::: sxiv ::::
