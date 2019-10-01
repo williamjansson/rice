@@ -24,7 +24,7 @@ static const char *colorname[] = {
     [14] = "#3d6630",
 
     /* wht */
-    [7] = "#1e2d1c",
+    [7] = "#000000",
     [15] = "#1e2d1c"
 };
 
