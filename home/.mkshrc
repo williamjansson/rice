@@ -1,0 +1,12 @@
+set -o emacs
+
+[ -z "$PS1" ] && return
+
+alias c="clear"
+
+HISTFILE="$HOME/.mksh_history"
+HISTSIZE=500
+
+PATH=$PATH:${HOME}/.bin
+
+PS1='$(pwd | sed "s,^$HOME,~,") > '
