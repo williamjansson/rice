@@ -1,6 +1,6 @@
 VERSION = 0.8
 
-PREFIX = /usr/local
+PREFIX = /usr/X11R7
 MANPREFIX = $(PREFIX)/man
 
 #CPPFLAGS = -DDEBUG

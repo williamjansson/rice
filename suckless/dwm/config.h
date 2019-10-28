@@ -28,7 +28,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     iscentered     isfloating   monitor */
 	{ "tabbed",   NULL,       NULL,       0,            0,             0,           -1 },
-	{ "st",       NULL,       NULL,       0,            1,             1,           -1 },
+	{ "st",       NULL,       NULL,       0,            1,             0,           -1 },
 	{ "Emacs",    NULL,       NULL,       0,            1,             1,           -1 },
 	{ "Gpick",    NULL,       NULL,       0,            1,             1,           -1 },
     { "Thunar",   NULL,       NULL,       0,            1,             1,           -1 },
@@ -43,8 +43,8 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "><>",      NULL },    /* first entry is default */
+	{ "[]=",      tile },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
@@ -64,11 +64,11 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-w", "400", "-x", "760", "-y", "420", NULL };
 static const char *termcmd[]  = { "st", "-g", "96x33", NULL };
 static const char *files[] = { "st", "-g", "16x16", "-e", "noice", NULL };
-static const char *launcher[] = { "fav", NULL };
+static const char *fav[] = { "fav", "&", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = launcher } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = fav } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_z,      spawn,          {.v = files } },
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
@@ -82,8 +82,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_z,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_w,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,             XK_space,  setlayout,      {0} },
 	{ MODKEY|Mod1Mask,              XK_space,  togglefloating, {0} },

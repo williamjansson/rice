@@ -1,6 +1,6 @@
 static const char *colorname[] = {
     /* blk */
-    [0] = "antiquewhite",
+    [0] = "#f8ead6",
 
     /* gry */
     [8] = "#9b9b9b",
