@@ -16,6 +16,7 @@ augroup END
 let g:loaded_matchparen=1
 
 set backspace=indent,eol,start
+set ruler
 set history=200
 set laststatus=2
 set wildmenu
@@ -45,6 +46,7 @@ highlight nonText ctermbg=NONE
 highlight EndOfBuffer ctermfg=0
 highlight FoldColumn ctermbg=0 ctermfg=0
 highlight VertSplit ctermfg=0 ctermbg=0
+hi StatusLine ctermfg=0 ctermbg=7
 
 "let g:limelight_conceal_ctermfg = 15
 

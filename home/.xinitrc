@@ -1,15 +1,20 @@
-setxkbmap -option ctrl:nocaps
-setxkbmap -option keypad:pointerkeys
+export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
 setxkbmap -model jp106 -layout jp
 
-export XMODIFIERS=@im=xim
-export GTK_IM_MODULE=xim
+export XMODIFIERS=@im=uim
+
+xsetroot -solid "#faebd7"
 
 xrdb ~/.Xresources
-xsetroot -solid "antiquewhite"
 
-xset -dpms
+#xset -dpms
 xset s off
-unclutter --timeout 1 &
+
+#uim-xim &
+#uim-toolbar-gtk &
+
+#sleep 1 && unclutter -root -idle 1 &
 
 exec dwm
