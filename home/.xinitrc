@@ -5,7 +5,7 @@ setxkbmap -model jp106 -layout jp
 
 export XMODIFIERS=@im=uim
 
-xsetroot -solid "#faebd7"
+xsetroot -solid "#f0ecdc"
 
 xrdb ~/.Xresources
 

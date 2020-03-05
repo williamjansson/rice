@@ -9,9 +9,9 @@ static const char *fonts[]          = { "Roboto Mono:size=9" };
 static const char dmenufont[]       = "Roboto Mono:size=9";
 static const char col_gray1[]       = "#1e2d1c";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#faebd7";
+static const char col_gray3[]       = "#f0ecdc";
 static const char col_gray4[]       = "#1e2d1c";
-static const char col_cyan[]        = "#faebd7";
+static const char col_cyan[]        = "#f0ecdc";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -34,6 +34,7 @@ static const Rule rules[] = {
     { "Thunar",   NULL,       NULL,       0,            1,             1,           -1 },
 	{ "Display",  NULL,       NULL,       0,            0,             1,           -1 },
 	{ "Sxiv",     NULL,       NULL,       0,            1,             1,           -1 },
+	{ "acme",     NULL,       NULL,       0,            1,             0,           -1 },
 };
 
 /* layout(s) */

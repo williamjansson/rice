@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:pixelsize=14:antialias=true:autohint=false:hintstyle=hintfull";
+static char *font = "Roboto Mono:pixelsize=13:antialias=true:autohint=false:hintstyle=hintfull";
 static int borderpx = 56;
 
 /*
