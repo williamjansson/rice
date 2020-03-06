@@ -10,8 +10,6 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-#Xcursor.theme: Adwaita
-#Xcursor.size: 48
 
 
 !:::: sxiv ::::

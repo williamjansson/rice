@@ -5,7 +5,7 @@ setxkbmap -model jp106 -layout jp
 
 export XMODIFIERS=@im=uim
 
-xsetroot -solid "#f0ecdc"
+xsetroot -solid "#f0f0dc"
 
 xrdb ~/.Xresources
 
@@ -14,7 +14,5 @@ xset s off
 
 #uim-xim &
 #uim-toolbar-gtk &
-
-#sleep 1 && unclutter -root -idle 1 &
 
 exec dwm
