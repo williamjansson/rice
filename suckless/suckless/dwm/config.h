@@ -1,3 +1,4 @@
+
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -5,8 +6,8 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "fxd:size=10" };
-static const char dmenufont[]       = "fxd:size=10";
+static const char *fonts[]          = { "Fixed-9:style=SemiCondensed" };
+static const char dmenufont[]       = "Fixed-9:style=SemiCondensed";
 static const char col_gray1[]       = "#1e2d1c";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#f0f0dc";
@@ -31,10 +32,11 @@ static const Rule rules[] = {
 	{ "st",       NULL,       NULL,       0,            1,             0,           -1 },
 	{ "Emacs",    NULL,       NULL,       0,            1,             1,           -1 },
 	{ "Gpick",    NULL,       NULL,       0,            1,             1,           -1 },
-    { "Thunar",   NULL,       NULL,       0,            1,             1,           -1 },
 	{ "Display",  NULL,       NULL,       0,            0,             1,           -1 },
 	{ "Sxiv",     NULL,       NULL,       0,            1,             1,           -1 },
 	{ "acme",     NULL,       NULL,       0,            1,             0,           -1 },
+	{ "KTerm",    NULL,       NULL,       0,            1,             0,           -1 },
+	{ "Nightly",  NULL,       NULL,       0,            1,             0,           -1 },
 };
 
 /* layout(s) */
@@ -63,7 +65,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-w", "400", "-x", "760", "-y", "420", NULL };
-static const char *termcmd[]  = { "st", "-g", "96x33", NULL };
+static const char *termcmd[]  = { "st", "-g", "80x40", NULL };
 static const char *files[] = { "st", "-g", "16x16", "-e", "noice", NULL };
 static const char *fav[] = { "fav", "&", NULL };
 

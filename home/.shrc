@@ -7,7 +7,9 @@ fi
 case "$-" in *i*)
 	# interactive mode settings go here
 
-	PLAN9=/home/x/dl/plan9port-master export PLAN9
+	export TERM="xterm-256color"
+	
+	PLAN9=/home/x/plan9 export PLAN9
 	PATH=$PATH:$PLAN9/bin export PATH
 
 	PS1="$(pwd | sed "s,^$HOME,~,") > "

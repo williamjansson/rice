@@ -1,6 +1,6 @@
-export LANG=ja_JP.UTF-8
-export LC_ALL=ja_JP.UTF-8
-export LC_CTYPE=ja_JP.UTF-8
+export LANG=ja_JP.eucJP
+export LC_ALL=ja_JP.eucJP
+export LC_CTYPE=ja_JP.eucJP
 setxkbmap -model jp106 -layout jp
 
 export XMODIFIERS=@im=uim
@@ -11,6 +11,8 @@ xrdb ~/.Xresources
 
 #xset -dpms
 xset s off
+
+xset fp+ /usr/pkg/share/fonts/X11/local
 
 #uim-xim &
 #uim-toolbar-gtk &
