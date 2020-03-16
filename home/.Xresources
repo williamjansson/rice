@@ -14,7 +14,7 @@ Xft.lcdfilter: lcddefault
 !:::: sxiv ::::
 
 Sxiv.background: #f0f0dc
-Sxiv.font: Roboto Mono-9
+Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
 
 
 !:::: colors ::::
@@ -47,30 +47,8 @@ Sxiv.font: Roboto Mono-9
 *color7:  wht
 *color15: wht
 
-KTerm*VT100*textColor0: blk
-KTerm*VT100*textColor1: red
-KTerm*VT100*textColor2: grn
-KTerm*VT100*textColor3: grn
-KTerm*VT100*textColor4: blu
-KTerm*VT100*textColor5: red
-KTerm*VT100*textColor6: blu
-KTerm*VT100*textColor7: wht
+rxvt.background: #f0f0dc
+rxvt.scrollBar: False
 
-KTerm*KanjiMode: euc
-KTerm*language: japanese
-
-KTerm*Font: -misc-fixed-medium-r-semicondensed--13-100-100-100-c-60-iso8859-1
-KTerm*romanaKanaFont: -shinonome-gothic-medium-r-normal--12-110-75-75-c-60-jisx0201.1976-0
-KTerm*kanjiFont: -shinonome-gothic-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0
-
-KTerm*Background: #f0f0dc
-
-KTerm*saveLines: 1000
-KTerm*reverseWrap: true
-
-!KTerm*VT100*lineSpace: 1
-
-!rxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
-!rxvt.mfont: -shinonome-gothic-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0
-
-URxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1,-shinonome-gothic-medium-r-normal--12-110-75-75-c-120-jisx0208.1990
+rxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
+rxvt.mfont: -shinonome-gothic-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0

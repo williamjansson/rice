@@ -13,6 +13,7 @@ xrdb ~/.Xresources
 xset s off
 
 xset fp+ /usr/pkg/share/fonts/X11/local
+xset fp rehash
 
 #uim-xim &
 #uim-toolbar-gtk &
