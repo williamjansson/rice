@@ -1,20 +1,15 @@
 #include ".clr"
 
+
 !:::: xorg ::::
 
-Xft.dpi: 102
+Xft.dpi: 96
 Xft.autohint: 0
 Xft.antialias: 1
 Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-
-
-!:::: sxiv ::::
-
-Sxiv.background: #f0f0dc
-Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
 
 
 !:::: colors ::::
@@ -47,8 +42,15 @@ Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
 *color7:  wht
 *color15: wht
 
-rxvt.background: #f0f0dc
-rxvt.scrollBar: False
 
-rxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
-rxvt.mfont: -shinonome-gothic-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0
+!:::: sxiv ::::
+
+Sxiv.background: #f0eed8
+Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
+
+
+!:::: rxvt ::::
+
+rxvt.background: #f0eed8
+rxvt.font: -misc-hej-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
+rxvt.mfont: -shinonome-jap-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0

@@ -1,18 +1,16 @@
-#	$NetBSD: dot.shrc,v 1.3 2007/11/24 11:14:42 pavel Exp $
+#	$NetBSD: dot.shrc,v 1.8 2007/11/24 11:14:41 pavel Exp $
 
 if [ -f /etc/shrc ]; then
 	. /etc/shrc
 fi
 
+hup(){ (read pid; kill -HUP $pid) </var/run/$1.pid; }
+
 case "$-" in *i*)
 	# interactive mode settings go here
-
-	export TERM="xterm-256color"
 	
-	PLAN9=/home/x/plan9 export PLAN9
-	PATH=$PATH:$PLAN9/bin export PATH
+	export PATH=$PATH:/home/x/.bin
 
-	PS1="$(pwd | sed "s,^$HOME,~,") > "
-	set -o emacs
+	PS1="> "
 	;;
 esac
