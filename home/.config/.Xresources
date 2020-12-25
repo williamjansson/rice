@@ -1,0 +1,63 @@
+#include "/home/x/.config/.clr"
+
+
+!:::: xorg ::::
+
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+
+!:::: colors ::::
+
+!blk
+*color0:  blk
+
+!gry
+*color8:  gry
+*color2:  gry
+
+!red
+*color1:  red
+*color5:  red
+*color9:  red
+*color13: red
+
+!grn
+*color3:  grn
+*color10: grn
+*color11: grn
+
+!blu
+*color4:  blu
+*color6:  blu
+*color12: blu
+*color14: blu
+
+!wht
+*color7:  wht
+*color15: wht
+
+
+!:::: sxiv ::::
+
+Sxiv.background: blk
+Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
+Sxiv.geometry: 800x800+0+0
+
+
+!:::: xterm ::::
+
+XTerm*background: blk
+XTerm*foreground: wht
+XTerm*font: -misc-xfont-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+XTerm*wideFont: -shinonome-jamixnew-medium-r-normal--13-120-75-75-c-120-iso10646-1
+XTerm*boldMode: false
+XTerm*borderWidth: 0
+
+URxvt.termName: rxvt
+URxvt.scrollBar: false

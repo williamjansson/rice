@@ -1,3 +1,7 @@
-2
-hej.pcf.gz -misc-hej-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
-jap.pcf.gz -shinonome-jap-medium-r-normal--12-110-75-75-c-120-jisx0208.1990-0
+6
+jamixnew.pcf.gz -shinonome-jamixnew-medium-r-normal--13-120-75-75-c-120-iso10646-1
+jamixnewxft.otb -misc-jamixnewxft-medium-r-normal--13-116-75-81-p-60-iso10646-1
+jamixnewxft.otb -misc-jamixnewxft-medium-r-normal--13-116-75-81-p-60-jisx0208.1983-0
+jamixnewxft.otb -misc-jamixnewxft-medium-r-normal--13-116-75-81-p-60-jisx0208.1990-0
+xfont-bold.pcf.gz -misc-xfont-bold-r-semicondensed--13-120-75-75-c-60-iso10646-1
+xfont.pcf.gz -misc-xfont-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1

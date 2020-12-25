@@ -1,16 +1,16 @@
---- dmenu.c.orig	2020-08-31 07:49:41.798991676 +0000
-+++ dmenu.c	2020-08-31 07:55:45.553809175 +0000
-@@ -38,6 +38,9 @@
+--- dmenu.c.orig	2020-11-01 21:33:19.133343937 +0900
++++ dmenu.c	2020-11-01 21:41:14.363040151 +0900
+@@ -37,6 +37,9 @@
+ static char text[BUFSIZ] = "";
  static char *embed;
  static int bh, mw, mh;
- static int inputw = 0, promptw;
 +static int dmx = 0; /* put dmenu at this x offset */
 +static int dmy = 0; /* put dmenu at this y offset (measured from the bottom if topbar is 0) */
 +static unsigned int dmw = 0; /* make dmenu this wide */
+ static int inputw = 0, promptw;
  static int lrpad; /* sum of left and right padding */
  static size_t cursor;
- static struct item *items = NULL;
-@@ -632,9 +635,9 @@
+@@ -637,9 +640,9 @@
  				if (INTERSECT(x, y, 1, 1, info[i]))
  					break;
  
@@ -23,7 +23,7 @@
  		XFree(info);
  	} else
  #endif
-@@ -642,9 +645,9 @@
+@@ -647,9 +650,9 @@
  		if (!XGetWindowAttributes(dpy, parentwin, &wa))
  			die("could not get embedding window attributes: 0x%lx",
  			    parentwin);
@@ -36,7 +36,7 @@
  	}
  	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
  	inputw = MIN(inputw, mw/3);
-@@ -683,6 +686,7 @@
+@@ -690,6 +693,7 @@
  usage(void)
  {
  	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
@@ -44,7 +44,7 @@
  	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
  	exit(1);
  }
-@@ -710,6 +714,12 @@
+@@ -717,6 +721,12 @@
  		/* these options take one argument */
  		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */
  			lines = atoi(argv[++i]);
