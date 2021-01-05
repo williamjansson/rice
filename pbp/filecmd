@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#xterm -g 80x24+910+416 -e noice /home/x &
+xterm -g 80x24+880+412 -e noice /menu &
+#xterm -g 30x20+823+368 -e noice /menu &

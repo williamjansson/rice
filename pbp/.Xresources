@@ -1,0 +1,62 @@
+#include ".clr"
+
+
+!:::: xorg ::::
+
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+
+!:::: colors ::::
+
+!blk
+*color0:  blk
+
+!gry
+*color8:  gry
+*color2:  gry
+
+!red
+*color1:  red
+*color5:  red
+*color9:  red
+*color13: red
+
+!grn
+*color3:  grn
+*color10: grn
+*color11: grn
+
+!blu
+*color4:  blu
+*color6:  blu
+*color12: blu
+*color14: blu
+
+!wht
+*color7:  wht
+*color15: wht
+
+
+!:::: sxiv ::::
+
+Sxiv.background: #e5e5e5
+Sxiv.font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
+
+
+!:::: rxvt ::::
+
+XTerm*background: #0e0c05
+XTerm*foreground: #f0ffca
+!XTerm*background: #e5e5e5
+!XTerm*foreground: #1e2d1c
+!XTerm*font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+XTerm*font: -misc-xfont-medium-r-normal--15-130-75-75-c-70-iso10646-1
+XTerm*wideFont: -shinonome-gothic-medium-r-normal--15-130-75-75-c-140-iso10646-1
+XTerm*borderWidth: 0
+XTerm*internalBorder: 32
