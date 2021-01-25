@@ -12,13 +12,14 @@ xsetroot -cursor_name left_ptr
 xrdb ~/.config/.Xresources
 xset s off
 xset -dpms
+#urxvtd -q -o -f &
 
 xset fp+ /usr/X11R7/lib/X11/fonts/custom
 xset fp rehash
 filecmd
 
-GTK_THEME=Arc uim-xim &
+#GTK_THEME=Arc uim-xim &
 
-xbanish &
+xdotool mousemove 1920 1080
 
-exec 2bwm
+exec sowm
